@@ -95,18 +95,99 @@ body.light .editor{border-color:#c9b38b;background:#fffefa}
 body.light .zellige-divider{opacity:1}
 body.light button.active{color:#fff}
 @media(max-width:600px){body.light .top:before,body.light .top:after{opacity:.36}body.light .fontcard:before{opacity:.27}}
+
+/* Compact responsive interface: reduces chrome, not the font specimens' selected size. */
+.shell{max-width:1180px;padding:14px}
+.top{padding:15px 17px 17px;gap:10px}
+.top h1{font-size:clamp(23px,3.1vw,37px);margin:5px 0}
+.top .muted{font-size:13px}
+.star-medallion{width:54px;height:54px;border-radius:14px}
+.star-medallion svg{width:42px;height:42px}
+.moroccan-brand{gap:12px}
+.panel{padding:14px;margin:12px 0;border-radius:14px}
+.panel h2,.summary h2{font-size:clamp(19px,2.4vw,27px);margin:7px 0 10px}
+button{padding:7px 10px;border-radius:9px;font-size:13px}
+.editor{min-height:86px;padding:11px;font-size:22px;line-height:1.55}
+.controls{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.control{gap:5px;font-size:12px}
+.control select{padding:7px}
+.samples{gap:6px;margin:10px 0}
+.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:10px}
+.fontcard{padding:13px;border-radius:13px}
+.fontcard h3{font-size:16px}
+.fontcard header{gap:7px}
+.specimen{margin:12px 0;min-height:95px}
+.single{margin:12px 0 5px;min-height:110px}
+.actions{gap:5px}
+.actions button,.actions a{padding:6px 8px;font-size:11px}
+.foot{margin:20px 0;padding-top:14px}
+@media(max-width:600px){
+ .shell{padding:8px}
+ .top{padding:11px;gap:8px}
+ .top h1{font-size:clamp(21px,6vw,28px)}
+ .top .muted{font-size:11px}
+ .star-medallion{width:40px;height:40px;border-radius:10px}
+ .star-medallion svg{width:31px;height:31px}
+ .moroccan-brand{gap:8px}
+ .panel{padding:10px;margin:10px 0}
+ .fontcard{padding:10px}
+ .grid{grid-template-columns:minmax(0,1fr)}
+ .controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .control select{min-width:0}
+ .editor{min-height:75px}
+ .specimen{min-height:75px}
+ .line{gap:6px}
+ .summary{gap:5px}
+ .summary .muted{font-size:11px}
+}
+
+/* Sample controls: balanced, predictable responsive layout */
+.samples{
+ display:grid;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ align-items:stretch;
+ gap:8px;
+ margin:12px 0;
+}
+.samples>.control{
+ grid-column:1/-1;
+ min-width:0!important;
+ width:100%;
+}
+.samples>.control select{width:100%;min-width:0}
+.samples>button{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:100%;
+ min-width:0;
+ min-height:42px;
+ padding:8px 6px;
+ text-align:center;
+ white-space:normal;
+ line-height:1.35;
+}
+@media(max-width:700px){
+ .samples{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ .samples>button:nth-of-type(4),
+ .samples>button:nth-of-type(5){grid-column:span 1}
+}
+@media(max-width:460px){
+ .samples{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+ .samples>button{font-size:12px;min-height:40px}
+}
 </style></head><body><main class="shell"><div class="top"><div class="moroccan-brand"><span class="star-medallion" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="25" y="25" width="50" height="50" fill="var(--gold-faint)" stroke="var(--gold-light)" stroke-width="2.6" stroke-linejoin="round"/><rect x="25" y="25" width="50" height="50" transform="rotate(45 50 50)" fill="rgba(115,217,199,.07)" stroke="var(--accent)" stroke-width="2.6" stroke-linejoin="round"/><circle cx="50" cy="50" r="3.5" fill="var(--gold-light)"/></svg></span><div><div class="brand">SIWANEXYZ / RAWANIDE</div><h1>مختبر مغربي أصيل <span style="color:var(--accent)">/ Type Lab</span></h1><div class="muted">Maghribi Assile v1.0.0 · 9 experimental weights · works offline</div></div></div><div class="line"><button id="theme">☀ تبديل المظهر</button><button id="reset">↺ إعادة الضبط</button></div></div>
 <section class="panel"><div class="line space"><div><div class="eyebrow">01 / TEXT PLAYGROUND</div><h2>اكتب نصك واختبره</h2></div><span class="pill">تحديث مباشر لكل الأوزان</span></div><textarea id="text" class="editor" dir="auto" spellcheck="false" aria-label="نص المعاينة">بسم الله الرحمن الرحيم
 المغربي الأصيل — جمال الخط العربي
 Maghribi Assile 2026 — RawanIDE
-السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ</textarea><div class="samples"><label class="control" style="min-width:190px">وزن خط حقل الكتابة<select id="editorWeight" aria-label="وزن خط الكتابة"></select></label><button data-sample="arabic">نص عربي</button><button data-sample="tashkeel">تشكيل</button><button data-sample="latin">English</button><button data-sample="numbers">أرقام ورموز</button><button data-sample="mixed">مختلط</button></div><div class="controls"><label class="control">حجم الخط <strong id="sizeVal">42px</strong><input id="size" type="range" min="14" max="110" value="42"></label><label class="control">تباعد الأسطر <strong id="heightVal">1.65</strong><input id="height" type="range" min="1" max="3" step=".05" value="1.65"></label><label class="control">تباعد الحروف <strong id="spacingVal">0px</strong><input id="spacing" type="range" min="-3" max="8" step=".25" value="0"></label><label class="control">اتجاه النص<select id="direction"><option value="rtl">يمين ← يسار</option><option value="ltr">يسار → يمين</option><option value="auto">تلقائي</option></select></label><label class="control">المحاذاة<select id="align"><option value="right">يمين</option><option value="center">وسط</option><option value="left">يسار</option></select></label><label class="control">طريقة العرض<select id="mode"><option value="grid">مقارنة جميع الأوزان</option><option value="single">معاينة وزن واحد</option></select></label></div></section>
+السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ</textarea><div class="samples"><label class="control" style="min-width:190px">وزن خط حقل الكتابة<select id="editorWeight" aria-label="وزن خط الكتابة"></select></label><button data-sample="arabic">نص عربي</button><button data-sample="tashkeel">تشكيل</button><button data-sample="latin">English</button><button data-sample="numbers">أرقام ورموز</button><button data-sample="mixed">مختلط</button><button data-sample="punctuation">علامات الترقيم</button></div><div class="controls"><label class="control">حجم الخط <strong id="sizeVal">42px</strong><input id="size" type="range" min="14" max="110" value="42"></label><label class="control">تباعد الأسطر <strong id="heightVal">1.65</strong><input id="height" type="range" min="1" max="3" step=".05" value="1.65"></label><label class="control">تباعد الحروف <strong id="spacingVal">0px</strong><input id="spacing" type="range" min="-3" max="8" step=".25" value="0"></label><label class="control">اتجاه النص<select id="direction"><option value="rtl">يمين ← يسار</option><option value="ltr">يسار → يمين</option><option value="auto">تلقائي</option></select></label><label class="control">المحاذاة<select id="align"><option value="right">يمين</option><option value="center">وسط</option><option value="left">يسار</option></select></label><label class="control">طريقة العرض<select id="mode"><option value="grid">مقارنة جميع الأوزان</option><option value="single">معاينة وزن واحد</option></select></label></div></section>
 <section class="panel hidden" id="singlePanel"><div class="line space"><div><div class="eyebrow">02 / FOCUSED PREVIEW</div><h2>معاينة منفردة</h2></div><label>الوزن <select id="singleSelect" style="padding:10px;background:var(--input);color:var(--text);border:1px solid var(--line);border-radius:10px"></select></label></div><div id="singleText" class="single"></div><div class="line"><button id="prev">الوزن السابق</button><button id="next">الوزن التالي</button><button id="copyCss">نسخ CSS للوزن</button><a id="singleDownload" href="#" download style="color:var(--accent)">تنزيل TTF</a></div></section>
 <section id="comparison"><div class="summary"><div><div class="eyebrow">02 / WEIGHT COMPARISON</div><h2>مقارنة الأوزان التسعة</h2></div><span class="muted small">اختر «معاينة منفردة» من أي بطاقة</span></div><div id="cards" class="grid"></div></section><div class="zellige-divider" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="20" height="20" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="20" height="20" transform="rotate(45 20 20)" stroke="var(--accent)" stroke-width="1.5"/></svg></div><footer class="foot">الأوزان 100–900 مشتقة آليًا لأغراض الاختبار؛ Regular 400 هو الأصل. ظهور الأشكال لا يثبت سلامة اتصال الحروف أو التشكيل. يعمل المختبر محليًا دون اتصالات خارجية. © 2026 Jamal El Hizazi · SiwaneXYZ · RawanIDE · elhizazi1</footer></main>
 <script>
-'use strict';const W=[[100,'Thin'],[200,'ExtraLight'],[300,'Light'],[400,'Regular'],[500,'Medium'],[600,'SemiBold'],[700,'Bold'],[800,'ExtraBold'],[900,'Black']];const $=id=>document.getElementById(id);let current=3;const samples={arabic:'المغربي الأصيل عنوان الجمال والإبداع\nأهلاً وسهلاً بكم في عالم الخط العربي',tashkeel:'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\nالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ\nإِنَّ مَعَ الْعُسْرِ يُسْرًا',latin:'Maghribi Assile — The quick brown fox jumps over the lazy dog.\nABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz',numbers:'0123456789 · ٠١٢٣٤٥٦٧٨٩ · ۰۱۲۳۴۵۶۷۸۹\n! ? % & @ # + − × ÷ ( ) [ ]',mixed:'مغربي أصيل — Maghribi Assile 1.0.0\nRawanIDE / SiwaneXYZ / elhizazi1\nالخط العربي الجميل — 2026'};const cards=$('cards');W.forEach(([weight,name],i)=>{let el=document.createElement('article');el.className='fontcard';el.innerHTML=`<header><div><h3>${name}</h3><div class="weight">${weight} · Maghribi Assile</div></div><span class="pill">${i===3?'Original':'Experimental'}</span></header><div class="specimen" style="font-family:MA${weight}" aria-label="معاينة ${name}"></div><div class="actions"><button data-focus="${i}">معاينة منفردة</button><button data-copy="${i}">نسخ CSS</button><a href="./fonts/ttf/MaghribiAssile-${name}.ttf" download>TTF ↓</a><a href="./fonts/woff2/MaghribiAssile-${name}.woff2" download>WOFF2 ↓</a></div>`;cards.append(el);let opt=document.createElement('option');opt.value=i;opt.textContent=`${name} — ${weight}`;$('singleSelect').append(opt);let eo=document.createElement('option');eo.value=weight;eo.textContent=`${name} — ${weight}`;$('editorWeight').append(eo)});$('editorWeight').value='400';
+'use strict';const W=[[100,'Thin'],[200,'ExtraLight'],[300,'Light'],[400,'Regular'],[500,'Medium'],[600,'SemiBold'],[700,'Bold'],[800,'ExtraBold'],[900,'Black']];const $=id=>document.getElementById(id);let current=3;const samples={arabic:'المغربي الأصيل عنوان الجمال والإبداع\nأهلاً وسهلاً بكم في عالم الخط العربي',tashkeel:'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ\nالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ\nإِنَّ مَعَ الْعُسْرِ يُسْرًا',latin:'Maghribi Assile — The quick brown fox jumps over the lazy dog.\nABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz',numbers:'0123456789 · ٠١٢٣٤٥٦٧٨٩ · ۰۱۲۳۴۵۶۷۸۹\n! ? % & @ # + − × ÷ ( ) [ ]',mixed:'مغربي أصيل — Maghribi Assile 1.0.0\nRawanIDE / SiwaneXYZ / elhizazi1\nالخط العربي الجميل — 2026',punctuation:'«مغربي أصيل» — «الخط العربي»\n، ؛ : . ! ؟ ? … ( ) [ ]\n½ ¼ ¾ — – /'};const initialText=$('text').value;const cards=$('cards');W.forEach(([weight,name],i)=>{let el=document.createElement('article');el.className='fontcard';el.innerHTML=`<header><div><h3>${name}</h3><div class="weight">${weight} · Maghribi Assile</div></div><span class="pill">${i===3?'Original':'Experimental'}</span></header><div class="specimen" style="font-family:MA${weight}" aria-label="معاينة ${name}"></div><div class="actions"><button data-focus="${i}">معاينة منفردة</button><button data-copy="${i}">نسخ CSS</button><a href="./fonts/ttf/MaghribiAssile-${name}.ttf" download>TTF ↓</a><a href="./fonts/woff2/MaghribiAssile-${name}.woff2" download>WOFF2 ↓</a></div>`;cards.append(el);let opt=document.createElement('option');opt.value=i;opt.textContent=`${name} — ${weight}`;$('singleSelect').append(opt);let eo=document.createElement('option');eo.value=weight;eo.textContent=`${name} — ${weight}`;$('editorWeight').append(eo)});$('editorWeight').value='400';
 function css(i){let [w,n]=W[i];return `@font-face {\n  font-family: 'Maghribi Assile ${n}';\n  src: url('./fonts/woff2/MaghribiAssile-${n}.woff2') format('woff2');\n  font-weight: ${w};\n  font-style: normal;\n}\n.example { font-family: 'Maghribi Assile ${n}', serif; }`}
 function copy(i){let val=css(i);if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(val).then(()=>alert('تم نسخ CSS')).catch(()=>fallback(val))}else fallback(val)}function fallback(val){let t=document.createElement('textarea');t.value=val;document.body.append(t);t.select();try{document.execCommand('copy');alert('تم نسخ CSS')}catch(e){prompt('انسخ CSS:',val)}t.remove()}
 function focus(i){current=(i+W.length)%W.length;$('singleSelect').value=current;$('editorWeight').value=W[current][0];$('mode').value='single';render();$('singlePanel').scrollIntoView({behavior:'smooth',block:'start'})}
 function render(){let ew=$('editorWeight').value;$('text').style.fontFamily=`MA${ew}, serif`;let txt=$('text').value,size=$('size').value,height=$('height').value,spacing=$('spacing').value,dir=$('direction').value,align=$('align').value; $('sizeVal').textContent=size+'px';$('heightVal').textContent=height;$('spacingVal').textContent=spacing+'px';document.querySelectorAll('.specimen').forEach((el,i)=>{el.textContent=txt;Object.assign(el.style,{fontSize:size+'px',lineHeight:height,letterSpacing:spacing+'px',direction:dir,textAlign:align})});let one=$('singleText');one.textContent=txt;Object.assign(one.style,{fontFamily:`MA${W[current][0]}`,fontSize:size+'px',lineHeight:height,letterSpacing:spacing+'px',direction:dir,textAlign:align});$('singleSelect').value=current;$('singleDownload').href=`./fonts/ttf/MaghribiAssile-${W[current][1]}.ttf`;let single=$('mode').value==='single';$('singlePanel').classList.toggle('hidden',!single);$('comparison').classList.toggle('hidden',single)}
-['text','editorWeight','size','height','spacing','direction','align','mode'].forEach(id=>$(id).addEventListener('input',render));$('singleSelect').addEventListener('change',e=>{current=+e.target.value;$('editorWeight').value=W[current][0];render()});$('prev').onclick=()=>focus(current-1);$('next').onclick=()=>focus(current+1);$('copyCss').onclick=()=>copy(current);cards.addEventListener('click',e=>{let b=e.target.closest('button');if(!b)return;if(b.dataset.focus!==undefined)focus(+b.dataset.focus);if(b.dataset.copy!==undefined)copy(+b.dataset.copy)});document.querySelectorAll('[data-sample]').forEach(b=>b.onclick=()=>{$('text').value=samples[b.dataset.sample];render()});$('theme').onclick=()=>document.body.classList.toggle('light');$('reset').onclick=()=>{$('editorWeight').value='400';$('size').value=42;$('height').value=1.65;$('spacing').value=0;$('direction').value='rtl';$('align').value='right';$('mode').value='grid';current=3;render()};render();
+['text','editorWeight','size','height','spacing','direction','align','mode'].forEach(id=>$(id).addEventListener('input',render));$('singleSelect').addEventListener('change',e=>{current=+e.target.value;$('editorWeight').value=W[current][0];render()});$('prev').onclick=()=>focus(current-1);$('next').onclick=()=>focus(current+1);$('copyCss').onclick=()=>copy(current);cards.addEventListener('click',e=>{let b=e.target.closest('button');if(!b)return;if(b.dataset.focus!==undefined)focus(+b.dataset.focus);if(b.dataset.copy!==undefined)copy(+b.dataset.copy)});document.querySelectorAll('[data-sample]').forEach(b=>b.onclick=()=>{$('text').value=samples[b.dataset.sample];render()});$('theme').onclick=()=>document.body.classList.toggle('light');$('reset').onclick=()=>{$('text').value=initialText;document.body.classList.remove('light');$('editorWeight').value='400';$('size').value=42;$('height').value=1.65;$('spacing').value=0;$('direction').value='rtl';$('align').value='right';$('mode').value='grid';current=3;render()};render();
 </script></body></html>
