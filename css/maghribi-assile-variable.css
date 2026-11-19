@@ -1,0 +1,9 @@
+/* One file, every weight 100-900 (use instead of maghribi-assile.css). */
+@font-face {
+  font-family: "Maghribi Assile";
+  src: url("../fonts/variable/MaghribiAssile[wght].woff2") format("woff2"),
+       url("../fonts/variable/MaghribiAssile[wght].ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}

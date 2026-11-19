@@ -1,1 +1,3 @@
 fonttools[woff]>=4.50
+numpy
+scipy

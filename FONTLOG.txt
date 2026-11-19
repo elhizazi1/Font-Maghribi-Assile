@@ -1,4 +1,0 @@
-Maghribi Assile 3.0.0 — 2026-11-19
-- Public experimental family with nine static weights (100–900).
-- Includes Arabic and Latin glyphs, OpenType GSUB and GPOS, TTF and WOFF2 files.
-- Includes a local interactive font laboratory and automated structural validation.

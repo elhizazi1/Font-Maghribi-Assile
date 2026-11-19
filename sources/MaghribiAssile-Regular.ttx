@@ -422,13 +422,13 @@
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
-    <fontRevision value="3.0"/>
-    <checkSumAdjustment value="0x7312a4e9"/>
+    <fontRevision value="1.0"/>
+    <checkSumAdjustment value="0x805a66b9"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001010"/>
     <unitsPerEm value="2048"/>
-    <created value="Tue Dec  6 10:29:51 1994"/>
-    <modified value="Thu Nov 19 13:57:52 2026"/>
+    <created value="Thu Nov 19 00:00:00 2026"/>
+    <modified value="Thu Nov 19 22:02:38 2026"/>
     <xMin value="-540"/>
     <yMin value="-740"/>
     <xMax value="3306"/>
@@ -22999,16 +22999,16 @@
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      3.000;SiwaneXYZ;MaghribiAssile-Regular
+      Maghribi Assile Regular; Version 1.000; elhizazi1
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Maghribi Assile Regular
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 3.000
+      Version 1.000
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      elhizaziMaghribiAssile-Regular
+      MaghribiAssile-Regular
     </namerecord>
     <namerecord nameID="8" platformID="1" platEncID="0" langID="0x0" unicode="True">
       SiwaneXYZ
@@ -23041,16 +23041,16 @@
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      3.000;SiwaneXYZ;MaghribiAssile-Regular
+      Maghribi Assile Regular; Version 1.000; elhizazi1
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       Maghribi Assile Regular
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 3.000
+      Version 1.000
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
-      elhizaziMaghribiAssile-Regular
+      MaghribiAssile-Regular
     </namerecord>
     <namerecord nameID="8" platformID="3" platEncID="1" langID="0x409">
       SiwaneXYZ
@@ -23344,276 +23344,6 @@
       <psName name="zerowidthnobreakspace"/>
     </extraNames>
   </post>
-
-  <GPOS>
-    <Version value="0x00010000"/>
-    <ScriptList>
-      <!-- ScriptCount=2 -->
-      <ScriptRecord index="0">
-        <ScriptTag value="DFLT"/>
-        <Script>
-          <DefaultLangSys>
-            <ReqFeatureIndex value="65535"/>
-            <!-- FeatureCount=1 -->
-            <FeatureIndex index="0" value="0"/>
-          </DefaultLangSys>
-          <!-- LangSysCount=0 -->
-        </Script>
-      </ScriptRecord>
-      <ScriptRecord index="1">
-        <ScriptTag value="latn"/>
-        <Script>
-          <DefaultLangSys>
-            <ReqFeatureIndex value="65535"/>
-            <!-- FeatureCount=1 -->
-            <FeatureIndex index="0" value="0"/>
-          </DefaultLangSys>
-          <!-- LangSysCount=0 -->
-        </Script>
-      </ScriptRecord>
-    </ScriptList>
-    <FeatureList>
-      <!-- FeatureCount=1 -->
-      <FeatureRecord index="0">
-        <FeatureTag value="kern"/>
-        <Feature>
-          <!-- LookupCount=1 -->
-          <LookupListIndex index="0" value="0"/>
-        </Feature>
-      </FeatureRecord>
-    </FeatureList>
-    <LookupList>
-      <!-- LookupCount=1 -->
-      <Lookup index="0">
-        <LookupType value="2"/>
-        <LookupFlag value="0"/>
-        <!-- SubTableCount=1 -->
-        <PairPos index="0" Format="1">
-          <Coverage>
-            <Glyph value="A"/>
-            <Glyph value="F"/>
-            <Glyph value="L"/>
-            <Glyph value="P"/>
-            <Glyph value="R"/>
-            <Glyph value="T"/>
-            <Glyph value="V"/>
-            <Glyph value="W"/>
-            <Glyph value="Y"/>
-            <Glyph value="e"/>
-            <Glyph value="f"/>
-            <Glyph value="o"/>
-            <Glyph value="r"/>
-          </Coverage>
-          <ValueFormat1 value="4"/>
-          <ValueFormat2 value="0"/>
-          <!-- PairSetCount=13 -->
-          <PairSet index="0">
-            <!-- PairValueCount=4 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="T"/>
-              <Value1 XAdvance="-35"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="V"/>
-              <Value1 XAdvance="-85"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="W"/>
-              <Value1 XAdvance="-62"/>
-            </PairValueRecord>
-            <PairValueRecord index="3">
-              <SecondGlyph value="Y"/>
-              <Value1 XAdvance="-80"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="1">
-            <!-- PairValueCount=2 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="A"/>
-              <Value1 XAdvance="-45"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="o"/>
-              <Value1 XAdvance="-28"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="2">
-            <!-- PairValueCount=2 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="T"/>
-              <Value1 XAdvance="-45"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="Y"/>
-              <Value1 XAdvance="-65"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="3">
-            <!-- PairValueCount=2 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="A"/>
-              <Value1 XAdvance="-42"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="e"/>
-              <Value1 XAdvance="-18"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="4">
-            <!-- PairValueCount=1 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="T"/>
-              <Value1 XAdvance="-25"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="5">
-            <!-- PairValueCount=6 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="a"/>
-              <Value1 XAdvance="-62"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="e"/>
-              <Value1 XAdvance="-60"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="o"/>
-              <Value1 XAdvance="-75"/>
-            </PairValueRecord>
-            <PairValueRecord index="3">
-              <SecondGlyph value="r"/>
-              <Value1 XAdvance="-30"/>
-            </PairValueRecord>
-            <PairValueRecord index="4">
-              <SecondGlyph value="u"/>
-              <Value1 XAdvance="-46"/>
-            </PairValueRecord>
-            <PairValueRecord index="5">
-              <SecondGlyph value="y"/>
-              <Value1 XAdvance="-50"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="6">
-            <!-- PairValueCount=4 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="A"/>
-              <Value1 XAdvance="-85"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="a"/>
-              <Value1 XAdvance="-55"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="e"/>
-              <Value1 XAdvance="-55"/>
-            </PairValueRecord>
-            <PairValueRecord index="3">
-              <SecondGlyph value="o"/>
-              <Value1 XAdvance="-65"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="7">
-            <!-- PairValueCount=4 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="A"/>
-              <Value1 XAdvance="-62"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="a"/>
-              <Value1 XAdvance="-48"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="e"/>
-              <Value1 XAdvance="-45"/>
-            </PairValueRecord>
-            <PairValueRecord index="3">
-              <SecondGlyph value="o"/>
-              <Value1 XAdvance="-55"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="8">
-            <!-- PairValueCount=4 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="A"/>
-              <Value1 XAdvance="-80"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="a"/>
-              <Value1 XAdvance="-65"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="e"/>
-              <Value1 XAdvance="-60"/>
-            </PairValueRecord>
-            <PairValueRecord index="3">
-              <SecondGlyph value="o"/>
-              <Value1 XAdvance="-70"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="9">
-            <!-- PairValueCount=3 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="v"/>
-              <Value1 XAdvance="-20"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="w"/>
-              <Value1 XAdvance="-18"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="y"/>
-              <Value1 XAdvance="-20"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="10">
-            <!-- PairValueCount=3 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="f"/>
-              <Value1 XAdvance="-12"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="i"/>
-              <Value1 XAdvance="-12"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="l"/>
-              <Value1 XAdvance="-12"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="11">
-            <!-- PairValueCount=3 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="v"/>
-              <Value1 XAdvance="-26"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="w"/>
-              <Value1 XAdvance="-23"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="x"/>
-              <Value1 XAdvance="-17"/>
-            </PairValueRecord>
-          </PairSet>
-          <PairSet index="12">
-            <!-- PairValueCount=3 -->
-            <PairValueRecord index="0">
-              <SecondGlyph value="v"/>
-              <Value1 XAdvance="-22"/>
-            </PairValueRecord>
-            <PairValueRecord index="1">
-              <SecondGlyph value="w"/>
-              <Value1 XAdvance="-22"/>
-            </PairValueRecord>
-            <PairValueRecord index="2">
-              <SecondGlyph value="y"/>
-              <Value1 XAdvance="-25"/>
-            </PairValueRecord>
-          </PairSet>
-        </PairPos>
-      </Lookup>
-    </LookupList>
-  </GPOS>
 
   <GSUB>
     <Version value="0x00010000"/>

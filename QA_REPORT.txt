@@ -1,0 +1,23 @@
+Maghribi Assile 1.0.0 — file verification
+Release date: 2026-11-19
+
+fonts/variable/MaghribiAssile[wght].ttf | version=1.0 | SHA256=57cdb80b215666601d96ef67c2213646bf1ca729e511339286963c650eb23bb3
+fonts/variable/MaghribiAssile[wght].woff2 | version=1.0 | SHA256=76dac65c4eb4339dfe675b49d066afff3cc387d81f2c757034e7391ad5802f6c
+fonts/ttf/MaghribiAssile-Black.ttf | version=1.0 | SHA256=ea90fa15556783d1670bcaf3501211b3546bb2d3f31ad655282c55a360db96a2
+fonts/ttf/MaghribiAssile-Bold.ttf | version=1.0 | SHA256=1910ddd0432201e895f35dedda2af0b924dbc2d62cc529291f8b3262c9356709
+fonts/ttf/MaghribiAssile-ExtraBold.ttf | version=1.0 | SHA256=f714d913c5bec111a310150b1b05fce16d48b3af2756abb2ceca5caf4f8d10eb
+fonts/ttf/MaghribiAssile-ExtraLight.ttf | version=1.0 | SHA256=3cfa4616166fea1aab5d0c4eac055cdb64b60316d14b7a0e7020a25ede4676c9
+fonts/ttf/MaghribiAssile-Light.ttf | version=1.0 | SHA256=8adef616f10f99e5ccd32420f1de36a09efa974d0bd3e39a3b0de2b5ac65b8ac
+fonts/ttf/MaghribiAssile-Medium.ttf | version=1.0 | SHA256=e11c2bbcbaa73779830c542dfa3fb1932bc6f7fa422e4cbb2550601cad58a37c
+fonts/ttf/MaghribiAssile-Regular.ttf | version=1.0 | SHA256=7cd4efc96a252f5261f37870c9d58cf63fa73781a08abbcd695b02ee767cb9fd
+fonts/ttf/MaghribiAssile-SemiBold.ttf | version=1.0 | SHA256=ad0fb5765c7b093f29505e23c6f62a67372e0ba2d07cd99cd1f870d14d1f0888
+fonts/ttf/MaghribiAssile-Thin.ttf | version=1.0 | SHA256=8b58c02f58df95cf9f8d72f61890b214de47c3cca37be2a5beed5c1aa5ba1116
+fonts/woff2/MaghribiAssile-Black.woff2 | version=1.0 | SHA256=a604bd17313f14216608af27d8211d85786947c0662b1b9ea7631fbf0fad2e6c
+fonts/woff2/MaghribiAssile-Bold.woff2 | version=1.0 | SHA256=06d2ac75521099544de32514836b2933fbaee82c830930d748965dea0fbcad25
+fonts/woff2/MaghribiAssile-ExtraBold.woff2 | version=1.0 | SHA256=d8ce5f66f559abcc1ab3be5de59d66d0f849735e19ab778b7e503758c12317fd
+fonts/woff2/MaghribiAssile-ExtraLight.woff2 | version=1.0 | SHA256=496143c63bd18ed73b59ca12cc6d82464301109f918a1d38ba2a27044661810f
+fonts/woff2/MaghribiAssile-Light.woff2 | version=1.0 | SHA256=b3bdbee9cc2322f499d03d0079031e2e4401dd9256fda30c2f873af260a26ff8
+fonts/woff2/MaghribiAssile-Medium.woff2 | version=1.0 | SHA256=927c947333533d36adb94df6bcc587843bba0c691aafb95a101a280fe31c4a73
+fonts/woff2/MaghribiAssile-Regular.woff2 | version=1.0 | SHA256=6e3652bc72c0fc10241d90f673432c3457e81b7a0c3bc528683ed4a0120070d4
+fonts/woff2/MaghribiAssile-SemiBold.woff2 | version=1.0 | SHA256=2127150fda902a3dc70f3312cae691392a232c7dae614140e1ed64e733fc3afa
+fonts/woff2/MaghribiAssile-Thin.woff2 | version=1.0 | SHA256=9e608d2ae0a1adf8eef2ee0eaad288127a52cc98c14e20e25da953c575e73908
