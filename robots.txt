@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elhizazi1.github.io/Font-Maghribi-Assile/sitemap.xml

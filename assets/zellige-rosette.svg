@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+<defs><g id="rosette" stroke-linejoin="round" stroke-width="2.4">
+<!-- two squares, one rotated 45 degrees, producing the traditional eight-point star -->
+<rect x="-63" y="-63" width="126" height="126" fill="#d6b46c" fill-opacity=".16" stroke="#d6b46c"/>
+<rect x="-63" y="-63" width="126" height="126" transform="rotate(45)" fill="#73d9c7" fill-opacity=".12" stroke="#73d9c7"/>
+<!-- segmented tesserae arranged between the two stars -->
+<path d="M0 -89 L21 -64 0 -42 -21 -64Z M89 0 L64 21 42 0 64 -21Z M0 89 L-21 64 0 42 21 64Z M-89 0 L-64 -21 -42 0 -64 21Z" fill="#73d9c7" fill-opacity=".25" stroke="#73d9c7"/>
+<path d="M63 -63 L76 -38 52 -23 38 -49Z M63 63 L38 76 23 52 49 38Z M-63 63 L-76 38 -52 23 -38 49Z M-63 -63 L-38 -76 -23 -52 -49 -38Z" fill="#d6b46c" fill-opacity=".24" stroke="#d6b46c"/>
+<path d="M0 -42 L25 -25 42 0 25 25 0 42 -25 25 -42 0 -25 -25Z" fill="#0d6f6d" fill-opacity=".28" stroke="#d6b46c"/>
+<path d="M0 -28 L20 -20 28 0 20 20 0 28 -20 20 -28 0 -20 -20Z" fill="#73d9c7" fill-opacity=".35" stroke="#f1d99b"/>
+<path d="M0 -16 L16 0 0 16 -16 0Z" fill="#d6b46c" fill-opacity=".45" stroke="#d6b46c"/>
+</g>
+<g id="connector" stroke="#d6b46c" stroke-opacity=".6" stroke-width="2" fill="none"><path d="M-25 0L0 -25L25 0L0 25Z"/><path d="M-12 0L0 -12L12 0L0 12Z" stroke="#73d9c7"/></g></defs>
+<g transform="translate(210 210)"><use href="#rosette"/><use href="#rosette" transform="translate(-190 -190) scale(.52)"/><use href="#rosette" transform="translate(190 -190) scale(.52)"/><use href="#rosette" transform="translate(-190 190) scale(.52)"/><use href="#rosette" transform="translate(190 190) scale(.52)"/>
+<use href="#connector" transform="translate(0 -154)"/><use href="#connector" transform="translate(154 0)"/><use href="#connector" transform="translate(0 154)"/><use href="#connector" transform="translate(-154 0)"/>
+<path d="M-120 -120 L-100 -140 -80 -120 -100 -100Z M120 -120 L140 -100 120 -80 100 -100Z M120 120 L100 140 80 120 100 100Z M-120 120 L-140 100 -120 80 -100 100Z" fill="#73d9c7" fill-opacity=".16" stroke="#d6b46c" stroke-width="2"/>
+</g></svg>

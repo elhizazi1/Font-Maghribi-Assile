@@ -1,0 +1,10 @@
+/* Nine static weights; see QUALITY_STATUS.md for quality limitations. */
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-Thin.woff2') format('woff2');font-weight: 100;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-ExtraLight.woff2') format('woff2');font-weight: 200;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-Light.woff2') format('woff2');font-weight: 300;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-Regular.woff2') format('woff2');font-weight: 400;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-Medium.woff2') format('woff2');font-weight: 500;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-SemiBold.woff2') format('woff2');font-weight: 600;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-Bold.woff2') format('woff2');font-weight: 700;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-ExtraBold.woff2') format('woff2');font-weight: 800;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Maghribi Assile';src: url('../fonts/woff2/MaghribiAssile-Black.woff2') format('woff2');font-weight: 900;font-style: normal;font-display: swap;}

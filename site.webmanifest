@@ -1,0 +1,21 @@
+{
+  "name": "Maghribi Assile Type Lab",
+  "short_name": "Maghribi Assile",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#102829",
+  "theme_color": "#102829",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
